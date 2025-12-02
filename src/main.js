@@ -1,24 +1,20 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+  <main class="min-h-screen flex items-center justify-center bg-slate-900">
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl font-bold text-emerald-400">
+        Tailwind 4 funcionando 🚀
+      </h1>
+      <p class="text-slate-300">
+        Si ves fondo oscuro y este texto centrado, todo está bien configurado.
+      </p>
+      <button
+        class="px-4 py-2 rounded-lg bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400 transition"
+      >
+        Botón Tailwind
+      </button>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+  </main>
 
-setupCounter(document.querySelector('#counter'))
+`
