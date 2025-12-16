@@ -1,3 +1,65 @@
-@import "tailwindcss"
+@import "tailwindcss";
 
+/* ===========================
+   TIPOGRAFÍA RESPONSIVE
+   =========================== */
+
+    :root {
+  /* TAMAÑOS DE TEXTO */
+  --text-sm: clamp(0.5rem, 0.5vw + 0.25em, 0.75rem);
+  --text-base: clamp(0.625rem, 0.6vw + 0.3em, 0.875rem);
+  --text-lg: clamp(0.75rem, 0.8vw + 0.4em, 1rem);
+  --text-xl: clamp(0.875rem, 1vw + 0.5em, 1.2rem);
+  --text-2xl: clamp(1rem, 1.5vw + 0.8em, 1.5rem);
+  --text-3xl: clamp(1.125rem, 2vw + 1em, 2rem);
+
+  /* ALTURA DE LÍNEA */
+  --line-height-base: clamp(0.875rem, 0.6vw + 0.85em, 1rem);
+  --line-height-lg: clamp(1rem, 0.8vw + 1em, 1.2rem);
+  --line-height-xl: clamp(1.1rem, 1vw + 1.1em, 1.3rem);
+}
+
+    
+
+/* ===========================
+   CLASES TIPO TAILWIND
+   =========================== */
+
+@layer utilities {
+  .text-sm {
+    font-size: var(--text-sm);
+  }
+
+  .text-base {
+    font-size: var(--text-base);
+  }
+
+  .text-lg {
+    font-size: var(--text-lg);
+  }
+
+  .text-xl {
+    font-size: var(--text-xl);
+  }
+
+  .text-2xl {
+    font-size: var(--text-2xl);
+  }
+
+  .text-3xl {
+    font-size: var(--text-3xl);
+  }
+
+  .leading-base {
+    line-height: var(--line-height-base);
+  }
+
+  .leading-lg {
+    line-height: var(--line-height-lg);
+  }
+
+  .leading-xl {
+    line-height: var(--line-height-xl);
+  }
+}
 
